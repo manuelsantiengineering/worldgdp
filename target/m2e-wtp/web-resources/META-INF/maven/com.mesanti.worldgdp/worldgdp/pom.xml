@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mesanti.worldgdp</groupId>
+  <artifactId>worldgdp</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>worldgdp Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+	<properties>
+    	<java.version>1.8</java.version>
+    	<spring.version>5.1.6.RELEASE</spring.version>
+    	<lombok.version>1.18.6</lombok.version>
+    	<hibernate.validator.version>6.0.16.Final</hibernate.validator.version>
+    	<mysql.jdbc.driver.version>5.1.47</mysql.jdbc.driver.version>
+    	<hikari.version>3.3.1</hikari.version>
+	</properties>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- Spring Dependencies -->
+    <dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-core</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	<dependency>
+	   <groupId>org.springframework</groupId>
+	   <artifactId>spring-jdbc</artifactId>
+	   <version>${spring.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-beans</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	<!-- Lombok Dependencies -->
+    <dependency>
+	    <groupId>org.projectlombok</groupId>
+	    <artifactId>lombok</artifactId>
+	    <optional>true</optional>
+	    <version>${lombok.version}</version>
+	</dependency>
+	<!-- Validation Dependencies -->
+	<dependency>
+        <groupId>org.hibernate.validator</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>${hibernate.validator.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>${mysql.jdbc.driver.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>${mysql.jdbc.driver.version}</version>
+    </dependency>
+    <!-- Connecion Pooling to create DataSource Instance -->
+    <dependency>
+        <groupId>com.zaxxer</groupId>
+        <artifactId>HikariCP</artifactId>
+        <version>${hikari.version}</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>worldgdp</finalName>
+  </build>
+</project>
