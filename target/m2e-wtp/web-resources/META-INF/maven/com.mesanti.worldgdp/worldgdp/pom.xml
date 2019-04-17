@@ -15,7 +15,12 @@
     	<hibernate.validator.version>6.0.16.Final</hibernate.validator.version>
     	<mysql.jdbc.driver.version>5.1.47</mysql.jdbc.driver.version>
     	<hikari.version>3.3.1</hikari.version>
+    	
     	<junit.version>4.12</junit.version>
+    	<junit.jupiter.version>5.4.2</junit.jupiter.version>
+		<junit.vintage.version>5.4.2</junit.vintage.version>
+		<junit.platform.version>1.4.2</junit.platform.version>
+		
     	<assertj.version>3.12.2</assertj.version>
     	<h2.version>1.4.199</h2.version>
     	
@@ -82,6 +87,39 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+    
+    <dependency>
+		<groupId>org.junit.jupiter</groupId>
+		<artifactId>junit-jupiter-api</artifactId>
+		<version>${junit.jupiter.version}</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.junit.jupiter</groupId>
+		<artifactId>junit-jupiter-engine</artifactId>
+		<version>${junit.jupiter.version}</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.junit.platform</groupId>
+		<artifactId>junit-platform-launcher</artifactId>
+		<version>${junit.platform.version}</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.junit.platform</groupId>
+		<artifactId>junit-platform-engine</artifactId>
+		<version>${junit.platform.version}</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.junit.vintage</groupId>
+		<artifactId>junit-vintage-engine</artifactId>
+		<version>${junit.vintage.version}</version>
+		<scope>test</scope>
+	</dependency>
+    
+    
     <!-- Use assertion testing for Java -->
     <dependency>
 	    <groupId>org.assertj</groupId>
